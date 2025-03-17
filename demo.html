@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Interactive Elements</h1>
+
+    <button class="button" id="colorButton">Click to Change Color</button>
+
+    <div class="box" id="animatedBox">Click me!</div>
+
+    <form id="userForm">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" required />
+      <button type="submit" class="button">Submit</button>
+    </form>
+
+    <p id="greeting"></p>
+
+    <div class="carousel" id="imageCarousel">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img
+            src="./images/download.png"
+            alt="Image 1"
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-slide">
+          <img
+            src="./images/images.jpeg"
+            alt="Image 2"
+            class="carousel-image"
+          />
+        </div>
+      </div>
+      <button class="carousel-button prev">&lt;</button>
+      <button class="carousel-button next">&gt;</button>
+    </div>
+
+    <div class="counter-container">
+      <h2>Click Counter</h2>
+      <p>Clicks: <span id="clickCount">0</span></p>
+      <button class="button" id="counterButton">Click me!</button>
+    </div>
+
+    <div class="color-picker">
+      <h2>Color Picker</h2>
+      <input type="color" id="colorPicker" value="#ff0000" />
+      <p>Selected color: <span id="selectedColor">#ff0000</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

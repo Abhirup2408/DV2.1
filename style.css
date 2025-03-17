@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff4500;
+  margin: 20px auto;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 20px;
+}
+
+.carousel-button.next {
+  right: 20px;
+}
+
+.counter-container,
+.color-picker {
+  margin-top: 20px;
+}
+
+#colorPicker {
+  margin: 10px;
+}
